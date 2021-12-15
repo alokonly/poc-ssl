@@ -1,0 +1,15 @@
+server:
+  port: 9101
+  ssl:
+    enabled: true
+    client-auth: need
+    key-store: classpath:truststore.jks
+    key-store-password: changeit
+    key-alias: localhost
+    key-store-type: JKS
+    key-store-provider: SUN
+    trust-store: classpath:truststore.jks
+    trust-store-password: changeit
+    trust-store-type: jks
+endpoint:
+  ssl-server: https://localhost:9102/user
